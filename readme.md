@@ -8,3 +8,9 @@ This is a practice project to get better at building backend APIs with Express a
 - Store both users and their challenge in MongoDB
 
 Not production-ready. Just building to learn and get sharper with backend logic and data modeling.
+
+
+### Environment setup (.env)
+
+PORT=5000
+MONGO_URI=mongodb+srv://...........

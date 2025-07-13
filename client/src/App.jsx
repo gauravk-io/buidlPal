@@ -1,14 +1,21 @@
-function App() {
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import Join from './pages/Join';
+import Challenge from './pages/Challenge';
+
+export default function App() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-neutral-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-semibold text-blue-600">Welcome to BuildPal</h1>
-        <button className="mt-6 px-5 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-          Join a Challenge
-        </button>
-      </div>
+    <div className="p-6">
+      <nav className="mb-6 flex gap-4">
+        <Link to="/" className="text-blue-500 underline">Home</Link>
+        <Link to="/join" className="text-blue-500 underline">Join</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/challenge/:id" element={<Challenge />} />
+      </Routes>
     </div>
   );
 }
-
-export default App;

@@ -12,5 +12,6 @@ Not production-ready. Just building to learn and get sharper with backend logic 
 
 ### Environment setup (.env)
 
+```env
 - PORT=5000
-- MONGO_URI=mongodb+srv://...........
+- MONGO_URI=mongodb+srv://<your-connection-string>
